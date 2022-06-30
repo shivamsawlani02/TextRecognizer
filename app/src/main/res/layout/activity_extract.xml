@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    tools:context=".ExtractActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5sp"
+        android:layout_above="@+id/fab_tick"
+        android:id="@+id/picture"
+        />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_tick"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:fabCustomSize="50dp"
+            android:layout_gravity="end|bottom"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="16dp"
+            android:contentDescription="Right"
+            android:src="@drawable/ic_checked_2" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_cross"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+            app:fabCustomSize="50dp"
+        android:layout_gravity="start|bottom"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/ic_cancel"
+        android:contentDescription="Wrong"
+        android:layout_margin="16dp" />
+</RelativeLayout>
